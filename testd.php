@@ -76,7 +76,7 @@ else {
 	</div>
 	<div class="box">
 		<h3>Postojeće deklinacije</h3>
-		<div id="prelist" style="border-bottom: 1px solid black;padding:0 0 2px 8px;width:292px;font-size:12;margin:2px 0 0 0;">
+		<div id="prelist" style="border-bottom: 1px solid black;padding:0 0 2px 8px;width:292px;font-size:12pt;;margin:2px 0 0 0;">
 			Sortiraj
 			<select name="smerpo" id="smerpo" onchange="ajax_request2()">
 				<option value="1" <?php if ($smerpo==1) echo 'selected="selected"'; ?>>rastuće</option>
@@ -107,10 +107,10 @@ else {
 	</div>
 </div>
 
-<div id="kolona_c" class="kolona" style="width:750px;margin:50px auto 20px;z-index:999">
+<div id="kolona_c" class="kolona" style="width:550px;margin:50px auto 20px;z-index:999">
 	<div class="box">
-		<h3 style="width:724">Deklinacija</h3>
-		<div id="centralni_box" style="width:710px;overflow-y:auto;overflow-x:hidden">
+		<h3 style="width: 524px;">Deklinacija</h3>
+		<div id="centralni_box" style="width:510px;overflow-y:auto;overflow-x:hidden">
 
 <?php
 if (isset($_POST['recnik'])) {
@@ -299,6 +299,8 @@ document.getElementById("kolona_d").style.height=viewportheight-75;
 document.getElementById("listareci").style.height=viewportheight-265;
 document.getElementById("centralni_box").style.height=viewportheight-145;
 }
+
+console.log(viewportwidth);
 
 if (viewportwidth < 1280)
 {

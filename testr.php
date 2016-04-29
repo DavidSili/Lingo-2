@@ -280,7 +280,9 @@ document.getElementById("rezultati").style.height=viewportheight-315;
 document.getElementById("centralni_box").style.height=viewportheight-145;
 }
 
-if (viewportwidth < 1280)
+ console.log(viewportwidth);
+
+ if (viewportwidth < 1280)
 {
 	document.getElementById("kolona_l").style.width=250;
 	document.getElementById("kolona_l").style.margin='0 0 10px 5px';

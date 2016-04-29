@@ -23,39 +23,35 @@
 <link type='text/css' rel='stylesheet' href='style.css' />
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-1.7.2.min.js"></script>
-<style type="text/css">
 <meta name="robots" content="noindex">
+<style type="text/css">
+	#centralni_box input {
+		margin-bottom: 10px;
+		width:195px;
+	}
+	.primer {
+		color:#aaa;
+		margin-left:30px;
+	}
 </style>
 </head>
-<body onload="ajax_request();ajax_request2();">
+<body>
 <form action="#" method="POST">
 <?php include 'topbar.php'; ?>
 
 <div id="kolona_l" class="kolona" style="margin:0 0 10px 20px;float:left">
 	<div class="box">
-		<h3>Rečnik</h3>
-		<div class="side_unutra" style="height:26px">
-			<select id="recniksend" onchange="ajax_request2()" name="recnik" style="width:100%">
-<?php
-$sql ='SELECT * FROM recnici ORDER BY `naziv`';
-$result = $mysqli->query($sql) or die;
-while ($row=$result->fetch_assoc()) {
-$tabela = $row['tabela'];
-$naziv = $row['naziv'];
-if ($recnik=="") $recnik=$tabela;
-			echo '<option value="'.$tabela.'"';
-			if ($tabela==$recnik) echo 'selected="selected"';
-			echo '>'.$naziv.'</option>';
-
-}
-
-?>
-			</select>
-		</div>
-	</div>
-	<div class="box">
-		<h3>Postojeće deklinacije</h3>
-		<div class="side_unutra" id="listareci" >
+		<h3>Postojeći rečnici za:</h3>
+		<div class="side_unutra" id="listareci" style="font-size:11pt">
+			<?php
+			$sql ='SELECT ime, tabela FROM jezici ORDER BY `ime`';
+			$result = $mysqli->query($sql) or die;
+			while ($row=$result->fetch_assoc()) {
+				$tabela = $row['tabela'];
+				$ime = $row['ime'];
+				echo $ime.' (<span style="font-style:italic;color:#aaa">'.$tabela.'</span>)<br>';
+			}
+			?>
 		</div>
 	</div>
 </div>
@@ -64,14 +60,34 @@ if ($recnik=="") $recnik=$tabela;
 	<div id="opcije" class="box">
 		<h3>Opcije</h3>
 		<div class="side_unutra">
+			<input type="submit" value="Kreiraj rečnik" style="width:100%;margin-bottom:20px" />
+			<input type="reset" value="Resetuj" style="width:100%" />
 		</div>
 	</div>
 </div>
 
-<div id="kolona_c" class="kolona" style="width:550px;margin:50px auto 20px;z-index:999">
+<div id="kolona_c" class="kolona" style="width:550px;margin:50px auto 20px;z-index:999;font-size: 11pt;">
 	<div class="box">
-		<h3 style="width:524">Unos deklinacija</h3>
+		<h3 style="width: 524px;">Unos deklinacija</h3>
 		<div id="centralni_box" class="deklinacija">
+			Naziv rečnika:<span style="margin-left:125px;font-style: bold;" class="primer">Primer:</span><br>
+			<input type="text" name="nrecnika" /><span class="primer">Srpski - Engleski</span><br>
+			Naziv tabele za reči:<br>
+			rec_<input type="text" name="tabreci" style="width:167px !important;"/><span class="primer">rec_srbeng</span><br>
+			Naziv tabele za deklinacije:<br>
+			dek_<input type="text" name="tabdek" style="width:164px !important;" /><span class="primer">dek_eng</span><br>
+			Naziv fajla za prvi jezik*:<br>
+			<input type="text" name="slikaa" /><span class="primer">srb.gif</span><br>
+			Naziv fajla za drugi jezik*:<br>
+			<input type="text" name="slikab" /><span class="primer">eng.gif</span><br>
+			Naziv prvog jezika u pridevu jednine:<br>
+			<input type="text" name="prideva" /><span class="primer">srpska</span><br>
+			Naziv drugog jezika u pridevu jednine:<br>
+			<input type="text" name="pridevb" /><span class="primer">engleska</span><br>
+			Naziv prvog jezika u genitivu jednine:<br>
+			<input type="text" name="genitiva" /><span class="primer">srpske</span><br>
+			Naziv drugog jezika u genitivu jednine:<br>
+			<input type="text" name="genitivb" /><span class="primer">engleske</span>
 		</div>
 	</div>
 </div>
@@ -102,7 +118,7 @@ if (viewportheight < 400)
 document.getElementById("kolona_l").style.height=325;
 document.getElementById("kolona_c").style.height=325;
 document.getElementById("kolona_d").style.height=325;
-document.getElementById("listareci").style.height=159;
+document.getElementById("listareci").style.height=325;
 document.getElementById("centralni_box").style.height=255;
 } 
 else
@@ -110,7 +126,7 @@ else
 document.getElementById("kolona_l").style.height=viewportheight-75;
 document.getElementById("kolona_c").style.height=viewportheight-75;
 document.getElementById("kolona_d").style.height=viewportheight-75;
-document.getElementById("listareci").style.height=viewportheight-241;
+document.getElementById("listareci").style.height=viewportheight-137;
 document.getElementById("centralni_box").style.height=viewportheight-145;
 }
 
@@ -137,19 +153,6 @@ if (viewportwidth < 1280)
 	$(".deklinacija div input").css("width","inherit");
 
 }
-function ajax_request()
-	{
-	$.getJSON('ajax/ajaxdek.php', {a1: $('#dizajn1').val(),a2: $('#dizajn2').val(),a3: $('#dizajn3').val(),a4: $('#dizajn4').val(),a5: $('#dizajn5').val(),a6: $('#dizajn6').val(),a7: $('#centriranje1').val(),a8: $('#centriranje2').val(),debug: $('#debug').val()}, function(data) {
-		$('#centralni_box').html(data.passhtml);
-		});
-	}
-function ajax_request2()
-	{
-	$.getJSON('ajax/ajaxdekrec.php', {recnik: $('#recniksend').val()}, function(data) {
-		$('#listareci').html(data.pass2html);
-		});
-	}
-
 </script>
 </form>
 </body>
