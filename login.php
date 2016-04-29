@@ -2,7 +2,7 @@
  
 session_start();
 include 'config.php';
-if (isset($_GET["url"])) $url=$_GET["url"];
+if (isset($_GET["url"]) AND ($_GET["url"]!="") AND ($_GET["url"]!="login.php")) $url=$_GET["url"];
 else $url="index.php";
 if (isset($_GET['login'])) {
 
@@ -18,7 +18,7 @@ if (isset($_GET['login'])) {
 	$sql = 'SELECT * FROM users WHERE `username`="'.$usersent.'"';
 	$result = $mysqli->query($sql) or die;
 	$row_cnt=$result->num_rows;
-	
+
 	if ($row_cnt==1) {
 	
 		$row=$result->fetch_assoc();
@@ -29,6 +29,8 @@ if (isset($_GET['login'])) {
 		$xhash = hash ('sha256', $passsent);
 		$hash = hash('sha256', $saltsql . $xhash);
 		
+		echo 'a: '.$level.'<br>b: '.$pass_url.'<br>';
+
 		if ($level>1 && $hash==$passsql) {
 		
 			$_SESSION['loggedin'] = 1;
