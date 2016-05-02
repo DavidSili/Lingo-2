@@ -12,6 +12,60 @@
 	$level=$_SESSION['level'];
 	$user=$_SESSION['user'];
 	}
+
+if (isset($_POST['nrecnika'])) {
+
+	if(isset($_POST['nrecnika'])) $nrecnika=$_POST['nrecnika'];
+	else $nrecnika="";
+	if(isset($_POST['tabreci'])) $tabreci=$_POST['tabreci'];
+	else $tabreci="";
+	if(isset($_POST['tabdek'])) $tabdek=$_POST['tabdek'];
+	else $tabdek="";
+	if(isset($_POST['slikaa'])) $slikaa=$_POST['slikaa'];
+	else $slikaa="";
+	if(isset($_POST['slikab'])) $slikab=$_POST['slikab'];
+	else $slikab="";
+	if(isset($_POST['prideva'])) $prideva=$_POST['prideva'];
+	else $prideva="";
+	if(isset($_POST['pridevb'])) $pridevb=$_POST['pridevb'];
+	else $pridevb="";
+	if(isset($_POST['genitiva'])) $genitiva=$_POST['genitiva'];
+	else $genitiva="";
+	if(isset($_POST['genitivb'])) $genitivb=$_POST['genitivb'];
+	else $genitivb="";
+
+	$nrecnika=stripslashes($nrecnika);
+	$nrecnika=$mysqli->real_escape_string($nrecnika);
+	$tabreci=stripslashes($tabreci);
+	$tabreci=$mysqli->real_escape_string($tabreci);
+	$tabdek=stripslashes($tabdek);
+	$tabdek=$mysqli->real_escape_string($tabdek);
+	$slikaa=stripslashes($slikaa);
+	$slikaa=$mysqli->real_escape_string($slikaa);
+	$slikab=stripslashes($slikab);
+	$slikab=$mysqli->real_escape_string($slikab);
+	$prideva=stripslashes($prideva);
+	$prideva=$mysqli->real_escape_string($prideva);
+	$pridevb=stripslashes($pridevb);
+	$pridevb=$mysqli->real_escape_string($pridevb);
+	$genitiva=stripslashes($genitiva);
+	$genitiva=$mysqli->real_escape_string($genitiva);
+	$genitivb=stripslashes($genitivb);
+	$genitivb=$mysqli->real_escape_string($genitivb);
+
+	$sql="INSERT INTO jezici ( ime, tabela, slikaa, slikab, prideva, pridevb, genitiva, genitivb ) VALUES ( '$nrecnika', 'rec_$tabreci', '$slikaa', '$slikab', '$prideva', '$pridevb', '$genitiva', '$genitivb' )";
+	$mysqli->query($sql) or trigger_error($mysqli->error."[ '1: '.$sql]");
+
+	$sql="INSERT INTO recnici ( tabela, naziv) VALUES ( 'dek_$tabdek', '$genitivb' )";
+	$mysqli->query($sql) or trigger_error($mysqli->error."[ '2: '.$sql]");
+
+	$sql="CREATE TABLE `lingo2`.`rec_$tabreci` ( `ID` INT(10) NOT NULL AUTO_INCREMENT , `aa` VARCHAR(50) NOT NULL , `bb` VARCHAR(50) NOT NULL , `coma` VARCHAR(100) NULL , `comb` VARCHAR(100) NULL , `syna` VARCHAR(300) NOT NULL , `synb` VARCHAR(300) NOT NULL , `uneo` VARCHAR(100) NOT NULL , `izmenio` TEXT NULL , PRIMARY KEY (`ID`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci";
+	$mysqli->query($sql) or trigger_error($mysqli->error."[ '3: '.$sql]");
+
+	$sql="CREATE TABLE `lingo2`.`dek_$tabdek` ( `ID` INT NOT NULL AUTO_INCREMENT , `naziv` VARCHAR(100) NOT NULL , `dizajn` VARCHAR(5000) NOT NULL , `odgovori` VARCHAR(5000) NOT NULL , `uneo` VARCHAR(100) NOT NULL , `izmenio` TEXT NULL , PRIMARY KEY (`ID`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci";
+	$mysqli->query($sql) or trigger_error($mysqli->error."[ '4: '.$sql]");
+}
+
 ?>
 <html>
 <head profile="http://www.w3.org/2005/20/profile">
@@ -70,7 +124,7 @@
 	<div class="box">
 		<h3 style="width: 524px;">Unos deklinacija</h3>
 		<div id="centralni_box" class="deklinacija">
-			Naziv rečnika:<span style="margin-left:125px;font-style: bold;" class="primer">Primer:</span><br>
+			Naziv rečnika:<span style="margin-left:125px;font-style: oblique;" class="primer">Primer:</span><br>
 			<input type="text" name="nrecnika" /><span class="primer">Srpski - Engleski</span><br>
 			Naziv tabele za reči:<br>
 			rec_<input type="text" name="tabreci" style="width:167px !important;"/><span class="primer">rec_srbeng</span><br>

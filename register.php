@@ -51,7 +51,7 @@ if (mysqli_num_rows($result)>0) {
 }
 
 	
-$query = "INSERT INTO users ( username, password, salt, confcode, confcode2, level, name, email, phone, country )
+$sql = "INSERT INTO users ( username, password, salt, confcode, confcode2, level, name, email, phone, country )
         VALUES ( '$usersent' , '$hash' , '$salt' , '$confcode' , '$confcode2' , '0' , '$name' , '$email' , '$phone' , '$country' );";
 		
 		if ($break==0) {
@@ -88,7 +88,7 @@ $query = "INSERT INTO users ( username, password, salt, confcode, confcode2, lev
 		echo '<div style="background:#fff;-moz-border-radius: 7px;border-radius: 7px;border: 2px #333 solid;padding:5px;text-align:center">Nije moguće poslati link za potvrdu na vašu e-mail adresu.</div>';
 		}
 
-		mysql_close();
+		mysqli_close();
 		}
 
 	}
