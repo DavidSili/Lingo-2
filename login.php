@@ -58,7 +58,7 @@ if (isset($_GET['login'])) {
 	  type="image/png"
 	  href="images/favicon.gif">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title id="Timerhead">Lingo 2.0 - prijava</title>
+<title id="Timerhead">Lingo 2.3 - prijava</title>
 <link type='text/css' rel='stylesheet' href='style.css' />
 <script src="js/jquery.min.js"></script>
 <meta name="robots" content="noindex">

@@ -48,7 +48,7 @@ $recnik="";
 	  type="image/png"
 	  href="images/favicon.gif">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title id="Timerhead">Lingo 2.0 - Izmena reči</title>
+<title id="Timerhead">Lingo 2.3 - Izmena reči</title>
 <link type='text/css' rel='stylesheet' href='style.css' />
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-1.7.2.min.js"></script>

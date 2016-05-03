@@ -18,7 +18,7 @@
 <link rel="icon"
 	  type="image/png"
 	  href="images/favicon.gif">
-<title id="Timerhead">Lingo 2.0 - Priprema za test reči na mobilnom</title>
+<title id="Timerhead">Lingo 2.3 - Priprema za test reči na mobilnom</title>
 <link type='text/css' rel='stylesheet' href='style.css' />
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-1.7.2.min.js"></script>

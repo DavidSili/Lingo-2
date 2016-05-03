@@ -102,7 +102,7 @@ $sql = "INSERT INTO users ( username, password, salt, confcode, confcode2, level
 	  type="image/png"
 	  href="images/favicon.gif">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title id="Timerhead">Lingo 2.0 - Registrovanje</title>
+<title id="Timerhead">Lingo 2.3 - Registrovanje</title>
 <link type='text/css' rel='stylesheet' href='style.css' />
 <script src="js/jquery.min.js"></script>
 <meta name="robots" content="noindex">
