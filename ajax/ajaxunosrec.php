@@ -2,6 +2,7 @@
 include '../config.php';
 $pass2html="";
 $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
+$recnik = $mysqli->real_escape_string($recnik);
 $sql="SELECT * FROM $recnik ORDER BY `bb` ASC";
 $result = $mysqli->query($sql) or die;
 while ($row=$result->fetch_assoc()) {

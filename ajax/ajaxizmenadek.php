@@ -2,6 +2,8 @@
 include '../config.php';
 $vrsta = isset($_GET["vrsta"]) ? $_GET["vrsta"] : 0;
 $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
+$vrsta = mysqli_real_escape_string($mysqli,vrsta);
+$recnik = mysqli_real_escape_string($mysqli,$recnik);
 
 if ($vrsta!=0) $sql="SELECT * FROM $recnik WHERE `ID`=$vrsta";
 else $sql="SELECT * FROM $recnik ORDER BY `ID` DESC LIMIT 1";

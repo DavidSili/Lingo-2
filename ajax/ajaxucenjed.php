@@ -1,13 +1,18 @@
 <?php
+include '../config.php';
+
 $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
 $srckoje = isset($_GET["srckoje"]) ? $_GET["srckoje"] : 0;
 $search = isset($_GET["search"]) ? $_GET["search"] : 0;
 $sortsmer = isset($_GET["sortsmer"]) ? $_GET["sortsmer"] : 0;
 $posebno = isset($_GET["posebno"]) ? $_GET["posebno"] : 0;
 
-include '../config.php';
-
-if (isset($posebno) AND $posebno!="") {
+$recnik = $mysqli->real_escape_string($recnik);
+$srckoje = $mysqli->real_escape_string($srckoje);
+$search = $mysqli->real_escape_string($search);
+$sortsmer = $mysqli->real_escape_string($sortsmer);
+$posebno = $mysqli->real_escape_string($posebno);
+if (isset($posebno) AND $posebno!="" AND $posebno!=0) {
 	$sql="SELECT * FROM $recnik WHERE `ID`='$posebno'";
 }
 elseif ($search!="") {
@@ -19,10 +24,10 @@ elseif ($search!="") {
 else {
 	$sql="SELECT * FROM $recnik ORDER BY `naziv` ".$sortsmer;
 }
-$result=mysql_query($sql) or die;
+$result=mysqli_query($mysqli,$sql) or die;
 $passhtml='';
 $count=0;
-while($row=mysql_fetch_assoc($result)) {
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}

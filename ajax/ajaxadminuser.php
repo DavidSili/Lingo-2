@@ -3,6 +3,8 @@ include '../config.php';
 $pass2html='';
 $a1 = isset($_GET["a1"]) ? $_GET["a1"] : 0;
 $a2 = isset($_GET["a2"]) ? $_GET["a2"] : 0;
+$a1 = $mysqli->real_escape_string($a1);
+$a2 = $mysqli->real_escape_string($a2);
 if ($a1==2) {
 	$result = $mysqli->query('SELECT username FROM users WHERE ID="'.$a2.'"') or die;
 	$row=$result->fetch_assoc();

@@ -15,7 +15,7 @@
 $datum=date('d.m.Y.');
 if (isset($_POST['kolikododaj'])) {
 	foreach($_POST as $aa => $bb) {
-		$$aa=$bb;
+		$$aa=mysqli_real_escape_string($mysqli,$bb);
 	}
 
 	for ($i = 1; $i <= $reci; $i++) {

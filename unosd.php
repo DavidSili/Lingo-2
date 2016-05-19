@@ -15,7 +15,7 @@
 	
 if (isset($_POST['dizajn1'])) {
 	foreach($_POST as $aa => $bb) {
-		$$aa=$bb;
+		$$aa=mysqli_real_escape_string($mysqli,$bb);
 	}
 
 $dizajn=$dizajn5.'$#!$';

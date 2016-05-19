@@ -2,24 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbc7926-d8f3-4b67-9b19-a260cd1052e1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/petrasil_lingo.sql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/ajaxtestrec1 - Copy.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminusers.php" afterPath="$PROJECT_DIR$/adminusers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxadminuser.php" afterPath="$PROJECT_DIR$/ajax/ajaxadminuser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxdek.php" afterPath="$PROJECT_DIR$/ajax/ajaxdek.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxdekrec.php" afterPath="$PROJECT_DIR$/ajax/ajaxdekrec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxdelc.php" afterPath="$PROJECT_DIR$/ajax/ajaxdelc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxdeld.php" afterPath="$PROJECT_DIR$/ajax/ajaxdeld.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxdelr.php" afterPath="$PROJECT_DIR$/ajax/ajaxdelr.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxizmenac.php" afterPath="$PROJECT_DIR$/ajax/ajaxizmenac.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxizmenaclista.php" afterPath="$PROJECT_DIR$/ajax/ajaxizmenaclista.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxizmenadek.php" afterPath="$PROJECT_DIR$/ajax/ajaxizmenadek.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxizmenadekrec.php" afterPath="$PROJECT_DIR$/ajax/ajaxizmenadekrec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxizmenarec.php" afterPath="$PROJECT_DIR$/ajax/ajaxizmenarec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxmtr.php" afterPath="$PROJECT_DIR$/ajax/ajaxmtr.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxtestd.php" afterPath="$PROJECT_DIR$/ajax/ajaxtestd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxtestddek.php" afterPath="$PROJECT_DIR$/ajax/ajaxtestddek.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxtestrec1.php" afterPath="$PROJECT_DIR$/ajax/ajaxtestrec1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxtestrec2.php" afterPath="$PROJECT_DIR$/ajax/ajaxtestrec2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxucenjed.php" afterPath="$PROJECT_DIR$/ajax/ajaxucenjed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxucenjeddek.php" afterPath="$PROJECT_DIR$/ajax/ajaxucenjeddek.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxucenjer.php" afterPath="$PROJECT_DIR$/ajax/ajaxucenjer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ajaxunosrec.php" afterPath="$PROJECT_DIR$/ajax/ajaxunosrec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forgot.php" afterPath="$PROJECT_DIR$/forgot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izmenac.php" afterPath="$PROJECT_DIR$/izmenac.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izmenad.php" afterPath="$PROJECT_DIR$/izmenad.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izmenar.php" afterPath="$PROJECT_DIR$/izmenar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mtr.php" afterPath="$PROJECT_DIR$/mtr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mtrprep.php" afterPath="$PROJECT_DIR$/mtrprep.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recnici.php" afterPath="$PROJECT_DIR$/recnici.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testd.php" afterPath="$PROJECT_DIR$/testd.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testr.php" afterPath="$PROJECT_DIR$/testr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ucenjed.php" afterPath="$PROJECT_DIR$/ucenjed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ucenjer.php" afterPath="$PROJECT_DIR$/ucenjer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unosc.php" afterPath="$PROJECT_DIR$/unosc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unosd.php" afterPath="$PROJECT_DIR$/unosd.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unosg.php" afterPath="$PROJECT_DIR$/unosg.php" />
@@ -45,26 +58,7 @@
     <favorites_list name="Lingo-2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55689657">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding>
-                <marker date="1462284764423" expanded="true" signature="938:984" placeholder="SELECT * FRO..quotes..." />
-                <marker date="1462284764423" expanded="true" signature="1196:1207" placeholder="..." />
-                <marker date="1462284764423" expanded="true" signature="1240:1250" placeholder="..." />
-                <marker date="1462284764423" expanded="true" signature="1305:1355" placeholder="SELECT * FRO..novosti..." />
-                <marker date="1462284764423" expanded="true" signature="1556:1624" placeholder="..." />
-                <marker date="1462284764423" expanded="true" signature="1680:1696" placeholder="..." />
-                <marker date="1462284764423" expanded="true" signature="1773:1806" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,26 +66,47 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/adminusers.php" />
+        <option value="$PROJECT_DIR$/mtrprep.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/ucenjer.php" />
+        <option value="$PROJECT_DIR$/ucenjed.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/recnici.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxizmenarec.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxtestrec2.php" />
+        <option value="$PROJECT_DIR$/unosg.php" />
         <option value="$PROJECT_DIR$/forgot.php" />
         <option value="$PROJECT_DIR$/izmenac.php" />
         <option value="$PROJECT_DIR$/izmenad.php" />
         <option value="$PROJECT_DIR$/izmenar.php" />
-        <option value="$PROJECT_DIR$/mtrprep.php" />
         <option value="$PROJECT_DIR$/mtr.php" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/register.php" />
-        <option value="$PROJECT_DIR$/recnici.php" />
-        <option value="$PROJECT_DIR$/testr.php" />
-        <option value="$PROJECT_DIR$/testd.php" />
+        <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/unosrmob.php" />
         <option value="$PROJECT_DIR$/unosr.php" />
-        <option value="$PROJECT_DIR$/unosg.php" />
         <option value="$PROJECT_DIR$/unosd.php" />
         <option value="$PROJECT_DIR$/unosc.php" />
-        <option value="$PROJECT_DIR$/ucenjer.php" />
-        <option value="$PROJECT_DIR$/ucenjed.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxizmenadekrec.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxizmenadek.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxizmenaclista.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxizmenac.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxdelr.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxdeld.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxdelc.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxdekrec.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxadminuser.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxunosrec.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxucenjeddek.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxtestrec1.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxtestddek.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxmtr.php" />
+        <option value="$PROJECT_DIR$/testd.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxtestd.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxdek.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxucenjer.php" />
+        <option value="$PROJECT_DIR$/testr.php" />
+        <option value="$PROJECT_DIR$/ajax/ajaxucenjed.php" />
       </list>
     </option>
   </component>
@@ -158,6 +173,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lingo-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lingo-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -183,6 +212,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -207,12 +241,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1669107" sideWeight="0.5" order="0" side_tool="true" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -223,7 +258,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -246,86 +280,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recnici.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1462284920805" expanded="true" signature="1799:1887" placeholder="INSERT INTO jezici..." />
-            <marker date="1462284920805" expanded="true" signature="1799:1998" placeholder="INSERT INTO jezici..." />
-            <marker date="1462284920805" expanded="true" signature="2081:2155" placeholder="INSERT INTO recnici..." />
-            <marker date="1462284920805" expanded="true" signature="2238:2619" placeholder="INSERT INTO jezici..." />
-            <marker date="1462284920805" expanded="true" signature="2702:3008" placeholder="INSERT INTO recnici..." />
-            <marker date="1462284920805" expanded="true" signature="3964:4009" placeholder="SELECT naziv..recnici..." />
-            <marker date="1462284920805" expanded="true" signature="4639:4684" placeholder="..." />
-            <marker date="1462284920805" expanded="true" signature="6090:6165" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="61" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
-          <folding>
-            <marker date="1462284948476" expanded="true" signature="1926:2029" placeholder="SELECT recni..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="2153:2188" placeholder="SELECT * FRO..jezici..." />
-            <marker date="1462284948476" expanded="true" signature="6043:6078" placeholder="SELECT * FRO..grupe..." />
-            <marker date="1462284948476" expanded="true" signature="6707:6718" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="6792:6804" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="7050:7184" placeholder="SELECT COUNT..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="7476:7609" placeholder="SELECT *, ID..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="7895:8015" placeholder="UPDATE `test..." />
-            <marker date="1462284948476" expanded="true" signature="8040:8215" placeholder="INSERT INTO `test_reci`..." />
-            <marker date="1462284948476" expanded="true" signature="8266:8449" placeholder="INSERT INTO `test_rezultati`..." />
-            <marker date="1462284948476" expanded="true" signature="8573:8583" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="8613:8675" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="8816:8826" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462284948544" expanded="true" signature="1270:1308" placeholder="SELECT * FRO..recnici..." />
-            <marker date="1462284948544" expanded="true" signature="3511:3555" placeholder="SELECT * FRO..${$recnik}..." />
-            <marker date="1462284948544" expanded="true" signature="4438:4471" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="4842:4901" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="5992:6008" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6093:6109" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6201:6217" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6309:6325" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6508:6525" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6771:6896" placeholder="SELECT *, CO..test_dek..." />
-            <marker date="1462284948544" expanded="true" signature="7261:7372" placeholder="UPDATE test_..." />
-            <marker date="1462284948544" expanded="true" signature="7394:7541" placeholder="INSERT INTO test_dek..." />
-            <marker date="1462284948544" expanded="true" signature="7588:7753" placeholder="INSERT INTO test_rezultati..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="235" column="30" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
           <folding>
-            <marker date="1462284948476" expanded="true" signature="1926:2029" placeholder="SELECT recni..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="2153:2188" placeholder="SELECT * FRO..jezici..." />
-            <marker date="1462284948476" expanded="true" signature="6043:6078" placeholder="SELECT * FRO..grupe..." />
-            <marker date="1462284948476" expanded="true" signature="6707:6718" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="6792:6804" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="7050:7184" placeholder="SELECT COUNT..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="7476:7609" placeholder="SELECT *, ID..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="7895:8015" placeholder="UPDATE `test..." />
-            <marker date="1462284948476" expanded="true" signature="8040:8215" placeholder="INSERT INTO `test_reci`..." />
-            <marker date="1462284948476" expanded="true" signature="8266:8449" placeholder="INSERT INTO `test_rezultati`..." />
-            <marker date="1462284948476" expanded="true" signature="8573:8583" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="8613:8675" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="8816:8826" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="2018:2121" placeholder="SELECT recni..test_reci..." />
+            <marker date="1463691819377" expanded="true" signature="2249:2284" placeholder="SELECT * FRO..jezici..." />
+            <marker date="1463691819377" expanded="true" signature="6139:6174" placeholder="SELECT * FRO..grupe..." />
+            <marker date="1463691819377" expanded="true" signature="6803:6814" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="6888:6900" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="7146:7280" placeholder="SELECT COUNT..test_reci..." />
+            <marker date="1463691819377" expanded="true" signature="7569:7702" placeholder="SELECT *, ID..test_reci..." />
+            <marker date="1463691819377" expanded="true" signature="7988:8108" placeholder="UPDATE `test..." />
+            <marker date="1463691819377" expanded="true" signature="8133:8308" placeholder="INSERT INTO `test_reci`..." />
+            <marker date="1463691819377" expanded="true" signature="8359:8541" placeholder="INSERT INTO `test_rezultati`..." />
+            <marker date="1463691819377" expanded="true" signature="8665:8675" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="8705:8767" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="8908:8918" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -351,38 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forgot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
-          <folding>
-            <marker date="1462284764439" expanded="true" signature="273:317" placeholder="SELECT * FRO..users..." />
-            <marker date="1462284764439" expanded="true" signature="478:513" placeholder="UPDATE users..." />
-            <marker date="1462284764439" expanded="true" signature="1410:1549" placeholder="..." />
-            <marker date="1462284764439" expanded="true" signature="1942:1985" placeholder="SELECT * FRO..users..." />
-            <marker date="1462284764439" expanded="true" signature="2203:2342" placeholder="..." />
-            <marker date="1462284764439" expanded="true" signature="2408:2547" placeholder="..." />
-            <marker date="1462284764439" expanded="true" signature="3214:3353" placeholder="..." />
-            <marker date="1462284764439" expanded="true" signature="3547:3590" placeholder="SELECT * FRO..users..." />
-            <marker date="1462284764439" expanded="true" signature="3918:3990" placeholder="UPDATE users..." />
-            <marker date="1462284764439" expanded="true" signature="4875:5014" placeholder="..." />
-            <marker date="1462284764439" expanded="true" signature="5091:5230" placeholder="..." />
-            <marker date="1462284764439" expanded="true" signature="5299:5438" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9051724">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1444201942781" expanded="true" signature="144:190" placeholder="SELECT * FRO..users..." />
-            <marker date="1444201942781" expanded="true" signature="512:557" placeholder="UPDATE users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminconfirm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -396,118 +336,255 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adminusers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61551726">
+        <state vertical-scroll-proportion="-13.730769">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
-            <marker date="1462284764391" expanded="true" signature="1649:1692" placeholder="SELECT * FRO..users..." />
+            <marker date="1462285194559" expanded="true" signature="1649:1692" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/izmenar.php">
+    <entry file="file://$PROJECT_DIR$/confirm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.762069">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1444201942781" expanded="true" signature="144:190" placeholder="SELECT * FRO..users..." />
+            <marker date="1444201942781" expanded="true" signature="512:557" placeholder="UPDATE users..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/izmenad.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8206897">
-          <caret line="151" column="31" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.18511796">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding>
-            <marker date="1462284791614" expanded="true" signature="1480:1528" placeholder="SELECT izmen..${$recnik}..." />
-            <marker date="1462284791614" expanded="true" signature="1675:1791" placeholder="UPDATE ${$re..." />
-            <marker date="1462284791614" expanded="true" signature="1848:1891" placeholder="SELECT tabel..recnici..." />
-            <marker date="1462284791614" expanded="true" signature="2022:2081" placeholder="SELECT COUNT..${$recnik}..." />
-            <marker date="1462284791614" expanded="true" signature="2226:2275" placeholder="SELECT * FRO..${$recnikx}..." />
-            <marker date="1462284791614" expanded="true" signature="4734:4772" placeholder="SELECT * FRO..recnici..." />
+            <marker date="1462285194591" expanded="true" signature="938:984" placeholder="SELECT * FRO..quotes..." />
+            <marker date="1462285194591" expanded="true" signature="1196:1207" placeholder="..." />
+            <marker date="1462285194591" expanded="true" signature="1240:1250" placeholder="..." />
+            <marker date="1462285194591" expanded="true" signature="1305:1355" placeholder="SELECT * FRO..novosti..." />
+            <marker date="1462285194591" expanded="true" signature="1556:1624" placeholder="..." />
+            <marker date="1462285194591" expanded="true" signature="1680:1696" placeholder="..." />
+            <marker date="1462285194591" expanded="true" signature="1773:1806" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forgot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.720508">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1463687972041" expanded="true" signature="282:326" placeholder="SELECT * FRO..users..." />
+            <marker date="1463687972041" expanded="true" signature="488:523" placeholder="UPDATE users..." />
+            <marker date="1463687972041" expanded="true" signature="1421:1560" placeholder="..." />
+            <marker date="1463687972041" expanded="true" signature="1953:1996" placeholder="SELECT * FRO..users..." />
+            <marker date="1463687972041" expanded="true" signature="2214:2353" placeholder="..." />
+            <marker date="1463687972041" expanded="true" signature="2419:2558" placeholder="..." />
+            <marker date="1463687972041" expanded="true" signature="3225:3364" placeholder="..." />
+            <marker date="1463687972041" expanded="true" signature="3558:3601" placeholder="SELECT * FRO..users..." />
+            <marker date="1463687972041" expanded="true" signature="3929:4001" placeholder="UPDATE users..." />
+            <marker date="1463687972041" expanded="true" signature="4886:5025" placeholder="..." />
+            <marker date="1463687972041" expanded="true" signature="5102:5241" placeholder="..." />
+            <marker date="1463687972041" expanded="true" signature="5310:5449" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/izmenac.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5862069">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state vertical-scroll-proportion="-2.8724139">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
           <folding>
-            <marker date="1462284791766" expanded="true" signature="437:484" placeholder="SELECT izmen..quotes..." />
-            <marker date="1462284791766" expanded="true" signature="735:829" placeholder="UPDATE quote..." />
-            <marker date="1462284791766" expanded="true" signature="1592:1631" placeholder="SELECT * FRO..quotes..." />
+            <marker date="1463688023276" expanded="true" signature="472:519" placeholder="SELECT izmen..quotes..." />
+            <marker date="1463688023276" expanded="true" signature="788:882" placeholder="UPDATE quote..." />
+            <marker date="1463688023276" expanded="true" signature="1645:1684" placeholder="SELECT * FRO..quotes..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mtr.php">
+    <entry file="file://$PROJECT_DIR$/izmenad.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.11615245">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/izmenar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35172415">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        <state vertical-scroll-proportion="104.61539">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
-            <marker date="1462284826775" expanded="true" signature="563:615" placeholder="SELECT * FRO..users..." />
-            <marker date="1462284826775" expanded="true" signature="1209:1320" placeholder="..." />
-            <marker date="1462284826775" expanded="true" signature="1443:1554" placeholder="..." />
-            <marker date="1462284826775" expanded="true" signature="1624:1735" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23448277">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mtrprep.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029310346">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <marker date="1462284826702" expanded="true" signature="1329:1369" placeholder="SELECT * FRO..jezici..." />
+            <marker date="1463688122141" expanded="true" signature="481:525" placeholder="SELECT izmen..${$recnik}..." />
+            <marker date="1463688122141" expanded="true" signature="805:974" placeholder="UPDATE ${$re..." />
+            <marker date="1463688122141" expanded="true" signature="1898:1995" placeholder="SELECT recni..test_reci..." />
+            <marker date="1463688122141" expanded="true" signature="2098:2133" placeholder="SELECT * FRO..jezici..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
+        <state vertical-scroll-proportion="-2.3155172">
           <caret line="104" column="31" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
           <folding>
-            <marker date="1462284920750" expanded="true" signature="1297:1347" placeholder="SELECT * FRO..users..." />
-            <marker date="1462284920750" expanded="true" signature="1453:1592" placeholder="..." />
-            <marker date="1462284920750" expanded="true" signature="1692:1736" placeholder="SELECT * FRO..users..." />
-            <marker date="1462284920750" expanded="true" signature="1842:1981" placeholder="..." />
-            <marker date="1462284920750" expanded="true" signature="2134:2368" placeholder="INSERT INTO users..." />
-            <marker date="1462284920750" expanded="true" signature="3336:3447" placeholder="..." />
-            <marker date="1462284920750" expanded="true" signature="3587:3698" placeholder="..." />
-            <marker date="1462284920750" expanded="true" signature="3830:3941" placeholder="..." />
+            <marker date="1462285194731" expanded="true" signature="1297:1347" placeholder="SELECT * FRO..users..." />
+            <marker date="1462285194731" expanded="true" signature="1453:1592" placeholder="..." />
+            <marker date="1462285194731" expanded="true" signature="1692:1736" placeholder="SELECT * FRO..users..." />
+            <marker date="1462285194731" expanded="true" signature="1842:1981" placeholder="..." />
+            <marker date="1462285194731" expanded="true" signature="2134:2368" placeholder="INSERT INTO users..." />
+            <marker date="1462285194731" expanded="true" signature="3336:3447" placeholder="..." />
+            <marker date="1462285194731" expanded="true" signature="3587:3698" placeholder="..." />
+            <marker date="1462285194731" expanded="true" signature="3830:3941" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recnici.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28275862">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+        <state vertical-scroll-proportion="-3.6344829">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
-            <marker date="1462284920805" expanded="true" signature="1799:1887" placeholder="INSERT INTO jezici..." />
-            <marker date="1462284920805" expanded="true" signature="1799:1998" placeholder="INSERT INTO jezici..." />
-            <marker date="1462284920805" expanded="true" signature="2081:2155" placeholder="INSERT INTO recnici..." />
-            <marker date="1462284920805" expanded="true" signature="2238:2619" placeholder="INSERT INTO jezici..." />
-            <marker date="1462284920805" expanded="true" signature="2702:3008" placeholder="INSERT INTO recnici..." />
-            <marker date="1462284920805" expanded="true" signature="3964:4009" placeholder="SELECT naziv..recnici..." />
-            <marker date="1462284920805" expanded="true" signature="4639:4684" placeholder="..." />
-            <marker date="1462284920805" expanded="true" signature="6090:6165" placeholder="..." />
+            <marker date="1463687509246" expanded="true" signature="1799:1887" placeholder="INSERT INTO jezici..." />
+            <marker date="1463687509246" expanded="true" signature="1799:1998" placeholder="INSERT INTO jezici..." />
+            <marker date="1463687509246" expanded="true" signature="2039:2113" placeholder="INSERT INTO recnici..." />
+            <marker date="1463687509246" expanded="true" signature="2154:2535" placeholder="INSERT INTO jezici..." />
+            <marker date="1463687509246" expanded="true" signature="2576:2882" placeholder="INSERT INTO recnici..." />
+            <marker date="1463687509246" expanded="true" signature="3796:3841" placeholder="SELECT naziv..recnici..." />
+            <marker date="1463687509246" expanded="true" signature="4471:4516" placeholder="..." />
+            <marker date="1463687509246" expanded="true" signature="5922:5997" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mtrprep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="28" />
+          <folding>
+            <marker date="1462285194694" expanded="true" signature="1329:1369" placeholder="SELECT * FRO..jezici..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mtr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33206108">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <marker date="1463688539077" expanded="true" signature="2390:2551" placeholder="SELECT AVG(p..." />
+            <marker date="1463688539077" expanded="true" signature="2801:3061" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="3099:3393" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="3431:3725" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="3763:4057" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="4095:4390" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="7573:7821" placeholder="SELECT *, r...${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="7909:8175" placeholder="SELECT *, r...${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="8214:8290" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463688539077" expanded="true" signature="9120:9203" placeholder="SELECT ID, a..${$recnik}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08793104">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.20172414">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <marker date="1462285194663" expanded="true" signature="563:615" placeholder="SELECT * FRO..users..." />
+            <marker date="1462285194663" expanded="true" signature="1209:1320" placeholder="..." />
+            <marker date="1462285194663" expanded="true" signature="1443:1554" placeholder="..." />
+            <marker date="1462285194663" expanded="true" signature="1624:1735" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unosrmob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <marker date="1463688652335" expanded="true" signature="497:669" placeholder="INSERT INTO ${$recnik}..." />
+            <marker date="1463688652335" expanded="true" signature="1335:1370" placeholder="SELECT * FRO..jezici..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unosr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <marker date="1463688683057" expanded="true" signature="680:918" placeholder="INSERT INTO ${$recnik}..." />
+            <marker date="1463688683057" expanded="true" signature="1780:1877" placeholder="SELECT recni..test_reci..." />
+            <marker date="1463688683057" expanded="true" signature="1982:2017" placeholder="SELECT * FRO..jezici..." />
+            <marker date="1463688683057" expanded="true" signature="3357:3419" placeholder="SELECT * FRO..grupe..." />
+            <marker date="1463688683057" expanded="true" signature="4191:4202" placeholder="..." />
+            <marker date="1463688683057" expanded="true" signature="4343:4354" placeholder="..." />
+            <marker date="1463688683057" expanded="true" signature="4505:4516" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unosg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <marker date="1463687868914" expanded="true" signature="576:632" placeholder="INSERT INTO grupe..." />
+            <marker date="1463687868914" expanded="true" signature="1374:1411" placeholder="SELECT * FRO..grupe..." />
+            <marker date="1463687868914" expanded="true" signature="1973:2029" placeholder="SELECT recni..test_reci..." />
+            <marker date="1463687868914" expanded="true" signature="2135:2221" placeholder="SELECT TABLE..TABLES..." />
+            <marker date="1463687868914" expanded="true" signature="2716:2734" placeholder="..." />
+            <marker date="1463687868914" expanded="true" signature="2781:2792" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unosd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4936479">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <marker date="1463688742073" expanded="true" signature="1509:1633" placeholder="INSERT INTO ${$recnik}..." />
+            <marker date="1463688742073" expanded="true" signature="2903:2941" placeholder="SELECT * FRO..recnici..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unosc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <marker date="1463688775959" expanded="true" signature="664:781" placeholder="INSERT INTO quotes..." />
+            <marker date="1463688775959" expanded="true" signature="1519:1558" placeholder="SELECT * FRO..quotes..." />
+            <marker date="1463688775959" expanded="true" signature="2469:2487" placeholder="..." />
+            <marker date="1463688775959" expanded="true" signature="2501:2533" placeholder="..." />
+            <marker date="1463688775959" expanded="true" signature="2547:2572" placeholder="..." />
+            <marker date="1463688775959" expanded="true" signature="2598:2609" placeholder="..." />
+            <marker date="1463688775959" expanded="true" signature="2715:2743" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ucenjer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10163339">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <marker date="1462285195098" expanded="true" signature="1227:1324" placeholder="SELECT recni..test_reci..." />
+            <marker date="1462285195098" expanded="true" signature="1430:1465" placeholder="SELECT * FRO..jezici..." />
           </folding>
         </state>
       </provider>
@@ -522,133 +599,486 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxizmenadekrec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14655173">
+          <caret line="5" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1463688873011" expanded="true" signature="162:204" placeholder="SELECT * FRO..${$recnik}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxizmenadek.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <marker date="1463688885347" expanded="true" signature="267:300" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463688885347" expanded="true" signature="320:368" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463688885347" expanded="true" signature="2298:2363" placeholder="..." />
+            <marker date="1463688885347" expanded="true" signature="2419:2431" placeholder="..." />
+            <marker date="1463688885347" expanded="true" signature="3290:3355" placeholder="..." />
+            <marker date="1463688885347" expanded="true" signature="3495:3508" placeholder="..." />
+            <marker date="1463688885347" expanded="true" signature="4660:4672" placeholder="..." />
+            <marker date="1463688885347" expanded="true" signature="4946:4957" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxizmenaclista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20517242">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1463688911843" expanded="true" signature="51:90" placeholder="SELECT * FRO..quotes..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxizmenac.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding>
+            <marker date="1463688986483" expanded="true" signature="162:204" placeholder="SELECT * FRO..quotes..." />
+            <marker date="1463688986483" expanded="true" signature="256:303" placeholder="SELECT * FRO..quotes..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxdelr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17586207">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <marker date="1463689009208" expanded="true" signature="272:313" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxdeld.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14655173">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding>
+            <marker date="1463689033991" expanded="true" signature="272:313" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxdelc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          <folding>
+            <marker date="1463689065518" expanded="true" signature="162:202" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxdekrec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14655173">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1463689092369" expanded="true" signature="162:204" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463689092369" expanded="true" signature="332:362" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxdek.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05862069">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1463690190690" expanded="true" signature="1421:1486" placeholder="..." />
+            <marker date="1463690190690" expanded="true" signature="1541:1553" placeholder="..." />
+            <marker date="1463690190690" expanded="true" signature="2137:2202" placeholder="..." />
+            <marker date="1463690190690" expanded="true" signature="2304:2317" placeholder="..." />
+            <marker date="1463690190690" expanded="true" signature="2740:2752" placeholder="..." />
+            <marker date="1463690190690" expanded="true" signature="2841:2851" placeholder="..." />
+            <marker date="1463690190690" expanded="true" signature="2934:2945" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxadminuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05862069">
+          <caret line="2" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1463689211717" expanded="true" signature="255:300" placeholder="SELECT usern..users..." />
+            <marker date="1463689211717" expanded="true" signature="398:480" placeholder="SELECT datum..test_reci..." />
+            <marker date="1463689211717" expanded="true" signature="703:784" placeholder="SELECT datum..test_dek..." />
+            <marker date="1463689211717" expanded="true" signature="1072:1092" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1109:1120" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1144:1155" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1209:1318" placeholder="SELECT recni..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="1398:1415" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1451:1468" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1617:1637" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1654:1665" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1689:1700" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1754:1863" placeholder="SELECT recni..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="1943:1960" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="1996:2013" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="2247:2302" placeholder="SELECT datum..test_reci..." />
+            <marker date="1463689211717" expanded="true" signature="2523:2577" placeholder="SELECT datum..test_dek..." />
+            <marker date="1463689211717" expanded="true" signature="2805:2889" placeholder="SELECT recni..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="2979:2999" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3016:3027" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3051:3062" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3160:3177" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3213:3230" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3321:3405" placeholder="SELECT recni..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="3499:3519" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3536:3547" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3571:3582" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3680:3697" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3733:3750" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="3858:3968" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="4004:4046" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4060:4078" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4127:4147" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4164:4175" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4201:4212" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4310:4327" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4361:4378" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4472:4582" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="4613:4655" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4669:4687" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4743:4763" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4780:4791" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4817:4828" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4926:4943" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="4977:4994" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5094:5205" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="5241:5283" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5297:5315" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5386:5406" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5423:5434" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5460:5471" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5569:5586" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5620:5637" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5731:5842" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="5873:5915" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="5929:5947" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6025:6045" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6062:6073" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6099:6110" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6208:6225" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6259:6276" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6376:6487" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="6523:6565" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6579:6597" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6670:6690" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6707:6718" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6744:6755" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6853:6870" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="6904:6921" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7015:7126" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="7157:7199" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7213:7231" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7310:7330" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7347:7358" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7384:7395" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7493:7510" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7544:7561" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7681:7782" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="7813:7855" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7869:7887" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="7968:7988" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8005:8016" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8042:8053" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8144:8161" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8195:8212" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8332:8433" placeholder="SELECT user,..test_rezultati..." />
+            <marker date="1463689211717" expanded="true" signature="8464:8506" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8520:8538" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8626:8646" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8663:8674" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8700:8711" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8802:8819" placeholder="..." />
+            <marker date="1463689211717" expanded="true" signature="8853:8870" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxizmenarec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <marker date="1463687560740" expanded="true" signature="276:309" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463687560740" expanded="true" signature="331:379" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463687560740" expanded="true" signature="586:621" placeholder="SELECT * FRO..grupe..." />
+            <marker date="1463687560740" expanded="true" signature="923:985" placeholder="SELECT * FRO..grupe..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxunosrec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20517242">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <marker date="1463689269918" expanded="true" signature="156:195" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463689269918" expanded="true" signature="345:375" placeholder="..." />
+            <marker date="1463689269918" expanded="true" signature="412:442" placeholder="..." />
+            <marker date="1463689269918" expanded="true" signature="560:646" placeholder="..." />
+            <marker date="1463689269918" expanded="true" signature="675:714" placeholder="..." />
+            <marker date="1463689269918" expanded="true" signature="765:775" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxucenjer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029310346">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1463690209892" expanded="true" signature="833:895" placeholder="SELECT * FRO..grupe..." />
+            <marker date="1463690209892" expanded="true" signature="1855:1926" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463690209892" expanded="true" signature="1957:2014" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463690209892" expanded="true" signature="2175:2194" placeholder="..." />
+            <marker date="1463690209892" expanded="true" signature="2245:2254" placeholder="..." />
+            <marker date="1463690209892" expanded="true" signature="2268:2277" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxucenjeddek.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17586207">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <marker date="1463689396126" expanded="true" signature="156:198" placeholder="SELECT * FRO..${$recnik}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxtestrec2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20517242">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <marker date="1463687760431" expanded="true" signature="586:634" placeholder="SELECT tabel..jezici..." />
+            <marker date="1463687760431" expanded="true" signature="884:1003" placeholder="SELECT datum..test_statistike..." />
+            <marker date="1463687760431" expanded="true" signature="1202:1337" placeholder="SELECT COUNT..test_reci..." />
+            <marker date="1463687760431" expanded="true" signature="1493:1679" placeholder="SELECT COUNT..idreci..." />
+            <marker date="1463687760431" expanded="true" signature="1520:1660" placeholder="SELECT idrec..test_reci..." />
+            <marker date="1463687760431" expanded="true" signature="1829:1854" placeholder="SELECT tabel..jezici..." />
+            <marker date="1463687760431" expanded="true" signature="1974:2162" placeholder="SELECT COUNT..idreci..." />
+            <marker date="1463687760431" expanded="true" signature="2001:2143" placeholder="SELECT idrec..test_reci..." />
+            <marker date="1463687760431" expanded="true" signature="2367:2406" placeholder="SELECT COUNT..${$recnik}..." />
+            <marker date="1463687760431" expanded="true" signature="2717:2742" placeholder="SELECT tabel..jezici..." />
+            <marker date="1463687760431" expanded="true" signature="2863:2902" placeholder="SELECT COUNT..${$tabela}..." />
+            <marker date="1463687760431" expanded="true" signature="3609:3801" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="4340:4533" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="5064:5247" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="5750:5901" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="6429:6598" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="7068:7238" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="7703:7863" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="8312:8440" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="8984:9125" placeholder="SELECT COUNT..test_reci..." />
+            <marker date="1463687760431" expanded="true" signature="9638:9780" placeholder="SELECT COUNT..test_reci..." />
+            <marker date="1463687760431" expanded="true" signature="10288:10478" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="11050:11241" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="11804:11985" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="12521:12670" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="13242:13447" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="14041:14247" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="14826:15022" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="15573:15737" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="16319:16523" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="17122:17327" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="17918:18113" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="18675:18838" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="19382:19528" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="20039:20200" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="20717:20877" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="21413:21538" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="22081:22221" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="22773:22912" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="23452:23559" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="24110:24210" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="24760:24875" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="25434:25548" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="26095:26177" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="26737:26815" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="27347:27440" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="27983:28075" placeholder="SELECT COUNT..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="28603:28663" placeholder="SELECT SUM(t..test_rezultati..." />
+            <marker date="1463687760431" expanded="true" signature="29141:29277" placeholder="SELECT stat,..test_statistike..." />
+            <marker date="1463687760431" expanded="true" signature="29421:29533" placeholder="UPDATE test_..." />
+            <marker date="1463687760431" expanded="true" signature="29582:29730" placeholder="INSERT INTO test_statistike..." />
+            <marker date="1463687760431" expanded="true" signature="29775:29903" placeholder="SELECT stat,..test_statistike..." />
+            <marker date="1463687760431" expanded="true" signature="30881:30892" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31036:31047" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31250:31261" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31452:31463" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31626:31637" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31725:31797" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31811:31851" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="31885:31924" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="32053:32092" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="32221:32260" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="32653:32708" placeholder="..." />
+            <marker date="1463687760431" expanded="true" signature="34646:34679" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxtestrec1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17586207">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding>
+            <marker date="1463689533311" expanded="true" signature="555:603" placeholder="SELECT tabel..jezici..." />
+            <marker date="1463689533311" expanded="true" signature="1131:1265" placeholder="SELECT AVG(p..." />
+            <marker date="1463689533311" expanded="true" signature="1527:1844" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="1879:2177" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="2212:2510" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="2545:2843" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="2878:3177" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="6716:6984" placeholder="SELECT *, r...${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="7069:7339" placeholder="SELECT *, r...${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="7375:7464" placeholder="SELECT SQL_C..${$recnik}..." />
+            <marker date="1463689533311" expanded="true" signature="8168:8179" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxtestddek.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05862069">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <marker date="1463689560085" expanded="true" signature="601:734" placeholder="SELECT * FRO..ID..." />
+            <marker date="1463689560085" expanded="true" signature="616:642" placeholder="SELECT ID ri..${$recnik}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxtestd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029310346">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1463690119734" expanded="true" signature="260:303" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463690119734" expanded="true" signature="1171:1204" placeholder="..." />
+            <marker date="1463690119734" expanded="true" signature="1599:1658" placeholder="..." />
+            <marker date="1463690119734" expanded="true" signature="2574:2590" placeholder="..." />
+            <marker date="1463690119734" expanded="true" signature="2681:2697" placeholder="..." />
+            <marker date="1463690119734" expanded="true" signature="2795:2811" placeholder="..." />
+            <marker date="1463690119734" expanded="true" signature="2909:2925" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxmtr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20517242">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <marker date="1463689600786" expanded="true" signature="650:819" placeholder="INSERT INTO `test_reci_m`..." />
+            <marker date="1463689600786" expanded="true" signature="841:1038" placeholder="UPDATE `test..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxizmenarecrec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1444992395054" expanded="true" signature="108:147" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1444992395054" expanded="true" signature="562:648" placeholder="..." />
+            <marker date="1444992395054" expanded="true" signature="677:716" placeholder="..." />
+            <marker date="1444992395054" expanded="true" signature="767:777" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testr.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.846154">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.88747734">
+          <caret line="219" column="148" selection-start-line="219" selection-start-column="148" selection-end-line="219" selection-end-column="148" />
           <folding>
-            <marker date="1462284948476" expanded="true" signature="1926:2029" placeholder="SELECT recni..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="2153:2188" placeholder="SELECT * FRO..jezici..." />
-            <marker date="1462284948476" expanded="true" signature="6043:6078" placeholder="SELECT * FRO..grupe..." />
-            <marker date="1462284948476" expanded="true" signature="6707:6718" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="6792:6804" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="7050:7184" placeholder="SELECT COUNT..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="7476:7609" placeholder="SELECT *, ID..test_reci..." />
-            <marker date="1462284948476" expanded="true" signature="7895:8015" placeholder="UPDATE `test..." />
-            <marker date="1462284948476" expanded="true" signature="8040:8215" placeholder="INSERT INTO `test_reci`..." />
-            <marker date="1462284948476" expanded="true" signature="8266:8449" placeholder="INSERT INTO `test_rezultati`..." />
-            <marker date="1462284948476" expanded="true" signature="8573:8583" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="8613:8675" placeholder="..." />
-            <marker date="1462284948476" expanded="true" signature="8816:8826" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="2018:2121" placeholder="SELECT recni..test_reci..." />
+            <marker date="1463691819377" expanded="true" signature="2249:2284" placeholder="SELECT * FRO..jezici..." />
+            <marker date="1463691819377" expanded="true" signature="6139:6174" placeholder="SELECT * FRO..grupe..." />
+            <marker date="1463691819377" expanded="true" signature="6803:6814" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="6888:6900" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="7146:7280" placeholder="SELECT COUNT..test_reci..." />
+            <marker date="1463691819377" expanded="true" signature="7569:7702" placeholder="SELECT *, ID..test_reci..." />
+            <marker date="1463691819377" expanded="true" signature="7988:8108" placeholder="UPDATE `test..." />
+            <marker date="1463691819377" expanded="true" signature="8133:8308" placeholder="INSERT INTO `test_reci`..." />
+            <marker date="1463691819377" expanded="true" signature="8359:8541" placeholder="INSERT INTO `test_rezultati`..." />
+            <marker date="1463691819377" expanded="true" signature="8665:8675" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="8705:8767" placeholder="..." />
+            <marker date="1463691819377" expanded="true" signature="8908:8918" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46551725">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state vertical-scroll-proportion="-7.034483">
+          <caret line="6" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462284948544" expanded="true" signature="1270:1308" placeholder="SELECT * FRO..recnici..." />
-            <marker date="1462284948544" expanded="true" signature="3511:3555" placeholder="SELECT * FRO..${$recnik}..." />
-            <marker date="1462284948544" expanded="true" signature="4438:4471" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="4842:4901" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="5992:6008" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6093:6109" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6201:6217" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6309:6325" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6508:6525" placeholder="..." />
-            <marker date="1462284948544" expanded="true" signature="6771:6896" placeholder="SELECT *, CO..test_dek..." />
-            <marker date="1462284948544" expanded="true" signature="7261:7372" placeholder="UPDATE test_..." />
-            <marker date="1462284948544" expanded="true" signature="7394:7541" placeholder="INSERT INTO test_dek..." />
-            <marker date="1462284948544" expanded="true" signature="7588:7753" placeholder="INSERT INTO test_rezultati..." />
+            <marker date="1463690074967" expanded="true" signature="1305:1343" placeholder="SELECT * FRO..recnici..." />
+            <marker date="1463690074967" expanded="true" signature="3651:3695" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463690074967" expanded="true" signature="4578:4611" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="4982:5041" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="6132:6148" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="6233:6249" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="6341:6357" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="6449:6465" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="6648:6665" placeholder="..." />
+            <marker date="1463690074967" expanded="true" signature="6911:7036" placeholder="SELECT *, CO..test_dek..." />
+            <marker date="1463690074967" expanded="true" signature="7401:7512" placeholder="UPDATE test_..." />
+            <marker date="1463690074967" expanded="true" signature="7534:7681" placeholder="INSERT INTO test_dek..." />
+            <marker date="1463690074967" expanded="true" signature="7728:7893" placeholder="INSERT INTO test_rezultati..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unosrmob.php">
+    <entry file="file://$PROJECT_DIR$/ajax/ajaxucenjed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.08793104">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
-            <marker date="1462284993842" expanded="true" signature="462:634" placeholder="INSERT INTO ${$recnik}..." />
-            <marker date="1462284993842" expanded="true" signature="1300:1335" placeholder="SELECT * FRO..jezici..." />
+            <marker date="1463692445043" expanded="true" signature="636:679" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463692445043" expanded="true" signature="778:850" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463692445043" expanded="true" signature="881:920" placeholder="SELECT * FRO..${$recnik}..." />
+            <marker date="1463692445043" expanded="true" signature="1804:1837" placeholder="..." />
+            <marker date="1463692445043" expanded="true" signature="2232:2291" placeholder="..." />
+            <marker date="1463692445043" expanded="true" signature="3215:3231" placeholder="..." />
+            <marker date="1463692445043" expanded="true" signature="3322:3338" placeholder="..." />
+            <marker date="1463692445043" expanded="true" signature="3436:3452" placeholder="..." />
+            <marker date="1463692445043" expanded="true" signature="3550:3566" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unosr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <marker date="1462284993811" expanded="true" signature="645:883" placeholder="INSERT INTO ${$recnik}..." />
-            <marker date="1462284993811" expanded="true" signature="1745:1842" placeholder="SELECT recni..test_reci..." />
-            <marker date="1462284993811" expanded="true" signature="1947:1982" placeholder="SELECT * FRO..jezici..." />
-            <marker date="1462284993811" expanded="true" signature="3322:3384" placeholder="SELECT * FRO..grupe..." />
-            <marker date="1462284993811" expanded="true" signature="4156:4167" placeholder="..." />
-            <marker date="1462284993811" expanded="true" signature="4308:4319" placeholder="..." />
-            <marker date="1462284993811" expanded="true" signature="4470:4481" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unosg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unosd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
-          <folding>
-            <marker date="1462284994071" expanded="true" signature="1474:1598" placeholder="INSERT INTO ${$recnik}..." />
-            <marker date="1462284994071" expanded="true" signature="2868:2906" placeholder="SELECT * FRO..recnici..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unosc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ucenjer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ucenjed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6448276">
+        <state vertical-scroll-proportion="-3.3982759">
           <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55689657">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
-            <marker date="1462284764423" expanded="true" signature="938:984" placeholder="SELECT * FRO..quotes..." />
-            <marker date="1462284764423" expanded="true" signature="1196:1207" placeholder="..." />
-            <marker date="1462284764423" expanded="true" signature="1240:1250" placeholder="..." />
-            <marker date="1462284764423" expanded="true" signature="1305:1355" placeholder="SELECT * FRO..novosti..." />
-            <marker date="1462284764423" expanded="true" signature="1556:1624" placeholder="..." />
-            <marker date="1462284764423" expanded="true" signature="1680:1696" placeholder="..." />
-            <marker date="1462284764423" expanded="true" signature="1773:1806" placeholder="..." />
+            <marker date="1462285195093" expanded="true" signature="1208:1246" placeholder="SELECT * FRO..recnici..." />
           </folding>
         </state>
       </provider>

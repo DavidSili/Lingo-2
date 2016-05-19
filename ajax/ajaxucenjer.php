@@ -1,4 +1,6 @@
 <?php
+include '../config.php';
+
 $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
 $grupe = isset($_GET["grupe"]) ? $_GET["grupe"] : 0;
 $srckoje = isset($_GET["srckoje"]) ? $_GET["srckoje"] : 0;
@@ -7,7 +9,13 @@ $search = isset($_GET["search"]) ? $_GET["search"] : 0;
 $sortpo = isset($_GET["sortpo"]) ? $_GET["sortpo"] : 0;
 $sortsmer = isset($_GET["sortsmer"]) ? $_GET["sortsmer"] : 0;
 
-include '../config.php';
+$recnik = $mysqli->real_escape_string($recnik);
+$grupe = $mysqli->real_escape_string($grupe);
+$srckoje = $mysqli->real_escape_string($srckoje);
+$srcsta = $mysqli->real_escape_string($srcsta);
+$search = $mysqli->real_escape_string($search);
+$sortpo = $mysqli->real_escape_string($sortpo);
+$sortsmer = $mysqli->real_escape_string($sortsmer);
 
 $grupex='<option value="sve_reci">sve reči</option>';
 

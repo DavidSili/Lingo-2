@@ -16,7 +16,7 @@
 if (isset($_POST['izmena'])) {
 	
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=mysqli_real_escape_string($mysqli,$yy);
 	}
 	
 	$datum=date('H:i:s d.m.Y.');
@@ -25,8 +25,8 @@ if (isset($_POST['izmena'])) {
 	$row=$result->fetch_assoc();
 	$izmenio=$row['izmenio'];
 	$izmenio=$izmenio.$user.' - '.$datum.'; ';
-	$izm_tekst=mysql_real_escape_string($izm_tekst);
-	$izm_autor=mysql_real_escape_string($izm_autor);
+	$izm_tekst=mysqli_real_escape_string($mysqli,$izm_tekst);
+	$izm_autor=mysqli_real_escape_string($mysqli,$izm_autor);
 	$sql="UPDATE quotes SET `quote`='$izm_tekst', `autor`='$izm_autor', `izmenio`='$izmenio' WHERE `ID`=$izm_id";
 	$mysqli->query($sql) or die;
 

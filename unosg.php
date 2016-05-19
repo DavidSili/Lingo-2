@@ -17,14 +17,14 @@ $datum=date('d.m.Y.');
 if (empty($_POST)==FALSE) {
 
 	foreach($_POST as $aa => $bb) {
-		$$aa=$bb;
+		$$aa=$mysqli->real_escape_string($bb);
 	}
 
 	for ($i = 1; $i <= 10; $i++) {
 		if (${'naziv'.$i}!="") {
 			${'naziv'.$i}=$mysqli->real_escape_string(${'naziv'.$i});
 			$sql="INSERT INTO grupe (`naziv`) VALUES ('".${'naziv'.$i}."')";
-			$mysqli->query($sql) or die (mysqli_error($mysqli));
+			$mysqli->query($sql) or die ;
 		}
 	}
 }
@@ -75,11 +75,11 @@ while ($row=$result->fetch_assoc()) {
 		<select name="recnik" style="width:100%"><option></option>
 <?php
 $sql='SELECT recnik FROM test_reci ORDER BY datum DESC LIMIT 1';
-$result = $mysqli->query($sql) or die (mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die ;
 $row=$result->fetch_assoc();
 $najsvezije=$row['recnik'];
 $sql="SELECT TABLE_NAME recnik FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME like 'rec\_%' ";
-$result = $mysqli->query($sql) or die (mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die ;
 while ($row=$result->fetch_assoc()) {
 	echo '<option ';
 	if ($najsvezije==$row['recnik']) echo 'selected="selected" ';

@@ -16,7 +16,7 @@
 if (isset($_POST['koliko'])) {
 	$go=1;
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=mysqli_real_escape_string($mysqli,$yy);
 	}
 	
 }
@@ -74,16 +74,17 @@ echo '<input type="hidden" name="userx" id="userx" value="'.$user.'" />';
 			<select name="recnik" id="recnik" style="width:100%">
 <?php
 if (isset($_POST['recnik'])) {
-$recnikx=explode("-",$_POST['recnik']);
-$recnik=$recnikx[1];
-$smer=$recnikx[0];
+	$recnik=mysqli_real_escape_string($mysqli,$_POST['recnik']);
+	$recnikx=explode("-",$recnik);
+	$recnik=$recnikx[1];
+	$smer=$recnikx[0];
 }
 else {
-$sql='SELECT recnik, smer FROM `test_reci` WHERE `user`="'.$user.'" ORDER BY `test_reci`.`datum` DESC LIMIT 1';
-$result = $mysqli->query($sql) or die;
-$row=$result->fetch_assoc();
-$recnik=$row['recnik'];
-$smer=$row['smer'];
+	$sql='SELECT recnik, smer FROM `test_reci` WHERE `user`="'.$user.'" ORDER BY `test_reci`.`datum` DESC LIMIT 1';
+	$result = $mysqli->query($sql) or die;
+	$row=$result->fetch_assoc();
+	$recnik=$row['recnik'];
+	$smer=$row['smer'];
 }
 $sql ='SELECT * FROM jezici ORDER BY `ime`';
 $result = $mysqli->query($sql) or die;
@@ -194,7 +195,6 @@ $countt=0;
 		$numr=$row['cnt'];
 		
 		echo '">'.${'recz'.$i}.'</div><div class="sideelement"><a href="#" title="'.${'recs'.$i}.'" style="cursor:help" tabindex="-1">'.${'recy'.$i}.'</a></div></div>';
-		
 		if ($numr==1) {
 			$sql="SELECT *, ID as idsel FROM `test_reci` WHERE `user`='$user' AND `recnik`='$recnik' AND `smer`='$smer' AND `idreci`='".${'reci'.$i}."'";
 			$result = $mysqli->query($sql) or die;
@@ -217,7 +217,7 @@ $countt=0;
 			$mysqli->query($sql) or die;
 
 	}
-	$sql='INSERT INTO `test_rezultati` (`user`,`recnik`,`smer`,`vrsta`,`ukupno`,`tacnih`,`datum`) VALUES ("'.$user.'","'.$recnik.'","'.$smer.'","reci",'.$ukupnoreci.','.$countt.',"'.$datumx.'") ';
+	$sql='INSERT INTO `test_rezultati` (`user`,`recnik`,`smer`,`vrsta`,`ukupno`,`tacnih`,`datum`) VALUES ("'.$user.'","'.$recnik.'","'.$smer.'","rec",'.$ukupnoreci.','.$countt.',"'.$datumx.'") ';
 	$mysqli->query($sql) or die;
 	$procentt=($countt/$ukupnoreci)*1000;
 	$procentt=round($procentt)/10;

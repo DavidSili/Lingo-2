@@ -15,7 +15,7 @@
 $datum=date('d.m.Y.');
 if (isset($_POST['reca'])) {
 	foreach($_POST as $aa => $bb) {
-		$$aa=$bb;
+		$$aa=mysqli_real_escape_string($mysqli,$bb);
 	}
 
 	if (($reca!="") AND ($recb!="")) {

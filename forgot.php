@@ -5,7 +5,7 @@ if (isset($_GET['forgot'])) {
 	if ($_GET['forgot']==1) {
 		$email=$_POST['email'];
 		$email=stripslashes($email);
-		$email=mysql_real_escape_string($email);
+		$email=mysqli_real_escape_string($mysqli,$email);
 		if ($email!="") {
 			$forgot=md5(uniqid(rand(), true));
 		
@@ -13,7 +13,7 @@ if (isset($_GET['forgot'])) {
 			$result = $mysqli->query($sql) or die;
 			$row=$result->fetch_assoc();
 			$user = $row['username'];
-			if (mysql_num_rows($result)==1) {
+			if (mysqli_num_rows($result)==1) {
 			
 				$query = "UPDATE users SET `forgot`='$forgot'";
 				$mysqli->query($sql) or die;
@@ -35,7 +35,7 @@ if (isset($_GET['forgot'])) {
 				$sentmail = mail($to,$subject,$message,$headers,$fifth);
 				}
 
-				mysql_close();
+				mysqli_close();
 				header("refresh: 5; url=login.php");
 				echo '<div style="background:#fff;-moz-border-radius: 7px;border-radius: 7px;border: 2px #333 solid;padding:5px;text-align:center;font-weight:bold;color:#55d">Ukoliko ste ispravno uneli e-mail adresu, e-mail sa linkom za promenu šifre je poslat na vašu e-mail adresu</div>';
 				

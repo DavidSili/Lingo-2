@@ -2,8 +2,8 @@
 include '../config.php';
 $htmlpass='';
 $sql="SELECT * FROM quotes ORDER BY `ID` DESC";
-$result=mysql_query($sql)) or die;
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}

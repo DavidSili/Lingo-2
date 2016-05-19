@@ -2,6 +2,8 @@
 include '../config.php';
 $sent = isset($_GET["sent"]) ? $_GET["sent"] : 0;
 $info = isset($_GET["info"]) ? $_GET["info"] : 0;
+$sent = $mysqli->real_escape_string($sent);
+$info = $mysqli->real_escape_string($info);
 $sent=explode('y',$sent);
 $info=explode(',',$info);
 $recnik=$info[0];

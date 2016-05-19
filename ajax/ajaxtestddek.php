@@ -4,6 +4,10 @@ $pass2html='';
 $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
 $smerpo = isset($_GET["smerpo"]) ? $_GET["smerpo"] : 0;
 $selpo = isset($_GET["selpo"]) ? $_GET["selpo"] : 0;
+$recnik = $mysqli->real_escape_string($recnik);
+$smerpo = $mysqli->real_escape_string($smerpo);
+$selpo = $mysqli->real_escape_string($selpo);
+
 switch ($selpo) {
 	case 1 :
 	$ordby='rid';

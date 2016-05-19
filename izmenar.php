@@ -15,7 +15,7 @@
 	
 if (isset($_POST['izm_id'])) {
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=mysqli_real_escape_string($mysqli,$yy);
 	}
 	
 $ID=$izm_id;

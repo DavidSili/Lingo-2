@@ -1,11 +1,13 @@
 <?php
+include '../config.php';
 $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
 $posebno = isset($_GET["posebno"]) ? $_GET["posebno"] : 0;
+$posebno=mysqli_real_escape_string($mysqli,$posebno);
+$recnik=mysqli_real_escape_string($mysqli,$recnik);
 
-include '../config.php';
 
 $sql="SELECT * FROM $recnik WHERE `ID`='$posebno'";
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $passhtml='';
 $count=0;
 while($row=$result->fetch_assoc()) {

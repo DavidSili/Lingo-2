@@ -1,4 +1,5 @@
 <?php
+include '../config.php';
 $dizajn1 = isset($_GET["a1"]) ? $_GET["a1"] : 0;
 $dizajn2 = isset($_GET["a2"]) ? $_GET["a2"] : 0;
 $dizajn3 = isset($_GET["a3"]) ? $_GET["a3"] : 0;
@@ -7,6 +8,15 @@ $dizajn5 = isset($_GET["a5"]) ? $_GET["a5"] : 0;
 $dizajn6 = isset($_GET["a6"]) ? $_GET["a6"] : 0;
 $centriranje1 = isset($_GET["a7"]) ? $_GET["a7"] : 0;
 $centriranje2 = isset($_GET["a8"]) ? $_GET["a8"] : 0;
+$dizajn1 = mysqli_real_escape_string($mysqli,$dizajn1);
+$dizajn2 = mysqli_real_escape_string($mysqli,$dizajn2);
+$dizajn3 = mysqli_real_escape_string($mysqli,$dizajn3);
+$dizajn4 = mysqli_real_escape_string($mysqli,$dizajn4);
+$dizajn5 = mysqli_real_escape_string($mysqli,$dizajn5);
+$dizajn6 = mysqli_real_escape_string($mysqli,$dizajn6);
+$centriranje1 = mysqli_real_escape_string($mysqli,$centriranje1);
+$centriranje2 = mysqli_real_escape_string($mysqli,$centriranje2);
+
 
 $rowwidth1=$dizajn1*197;
 $rowwidth2=$dizajn3*197;

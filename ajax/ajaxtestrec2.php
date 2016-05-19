@@ -4,11 +4,17 @@ $klk = isset($_GET["koliko"]) ? $_GET["koliko"] : 0;
 $tipt = isset($_GET["tipt"]) ? $_GET["tipt"] : 0;
 $userx = isset($_GET["userx"]) ? $_GET["userx"] : 0;
 $poziv = isset($_GET["poziv"]) ? $_GET["poziv"] : 0;
+$recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
+$klk=mysqli_real_escape_string($mysqli,$klk);
+$tipt=mysqli_real_escape_string($mysqli,$tipt);
+$userx=mysqli_real_escape_string($mysqli,$userx);
+$poziv=mysqli_real_escape_string($mysqli,$poziv);
+$recnik=mysqli_real_escape_string($mysqli,$recnik);
 
 $passhtml="";
 $datum=date('Y-m-d');
 $sql ='SELECT tabela FROM jezici ORDER BY `ime` LIMIT 1';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 if (isset($_GET['recnik'])) {
 $recnikx=explode("-",$_GET['recnik']);
@@ -22,7 +28,7 @@ $smer='a';
 
 if ($poziv==1) {
 $sql='SELECT datum FROM test_statistike WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $datumy=$row['datum'];
 if ($datumy!=$datum) $poziv=2;
@@ -32,14 +38,14 @@ $store='';
 
 // broj naučenih reči u jednom smeru
 $sql='SELECT COUNT(*) cnt FROM test_reci WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND procenat>=0.8 AND ukupno>7';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat0a=$row['cnt'];
 $store.=$stat0a.'$!$';
 
 // broj naučenih reči u oba smera
 $sql='SELECT COUNT(*) cnt FROM ( SELECT idreci, SUM(IF(procenat>0.8 AND ukupno>7,1,0)) AS rez FROM test_reci WHERE user="'.$userx.'" AND recnik="'.$recnik.'" GROUP BY idreci ) AS d WHERE rez=2';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat0b=$row['cnt'];
 $store.=$stat0b.'$!$';
@@ -48,11 +54,11 @@ $store.=$stat0b.'$!$';
 
 $sql='SELECT tabela FROM jezici';
 $stat0c=0;
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $tabela=$row['tabela'];
 $sql='SELECT COUNT(*) cnt FROM ( SELECT idreci, SUM(IF((procenat>0.8 AND ukupno>7),1,0)) AS rez FROM test_reci WHERE user="'.$userx.'" AND recnik="'.$tabela.'" GROUP BY idreci ) AS d WHERE rez=2';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat0c=$stat0c+$row['cnt'];
 }
@@ -61,7 +67,7 @@ $store.=$stat0c.'$!$';
 // uzimanje informacija o ukupnom broju reči za sledeće tri statistike
 
 $sql2='SELECT COUNT(ID) cnt FROM `'.$recnik.'`';
-$result2 = $mysqli->query($sql2) or die(mysqli_error($mysqli));
+$result2 = $mysqli->query($sql2) or die;
 $row2=$result2->fetch_assoc();
 
 //    procenat broja naučenih reči u jednom smeru i u oba smera
@@ -81,11 +87,11 @@ $stat0e=$stat0b/$statx1;
 
 $sql='SELECT tabela FROM jezici';
 $statx2=0;
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $tabela=$row['tabela'];
 $sql2='SELECT COUNT(ID) cnt FROM `'.$tabela.'`';
-$result2 = $mysqli->query($sql2) or die(mysqli_error($mysqli));
+$result2 = $mysqli->query($sql2) or die;
 $row2=$result2->fetch_assoc();
 $statx2=$statx2+$row2['cnt'];
 }
@@ -102,7 +108,7 @@ $store.=$statx1.'$!$'.$statx2.'$!!$Procenat broja naučenih reči u ovom smeru$!
 // Testovi sa procentom tačnosti većim od 50% u toku ovog dana
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.5 AND ukupno>9 AND vrsta="rec" AND datum="'.$datum.'"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat001=$row['cnt'];
 if ($stat001<=30) $graph=round($stat001/30*42);
@@ -115,7 +121,7 @@ $store.='Testovi sa procentom tačnosti većim od 50% u toku ovog dana$!$'.$stat
 // Testovi sa procentom tačnosti većim od 75% u toku ovog dana
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.75 AND ukupno>9 AND vrsta="rec" AND datum="'.$datum.'"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat002=$row['cnt'];
 if ($stat002<=30) $graph=round($stat002/30*42);
@@ -128,7 +134,7 @@ $store.='Testovi sa procentom tačnosti većim od 75% u toku ovog dana$!$'.$stat
 // Testovi sa svim tačnim odgovorima u toku ovog dana
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		tacnih = ukupno AND ukupno>9 AND vrsta="rec" AND datum="'.$datum.'"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat003=$row['cnt'];
 if ($stat003<=10) $graph=round($stat003/10*42);
@@ -140,7 +146,7 @@ $store.='Testovi sa svim tačnim odgovorima u toku ovog dana$!$'.$stat003.'$!$10
 
 // Svi tacni odgovori u toku ovog dana
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" AND datum="'.$datum.'"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat004=$row['cnt'];
 if ($stat004==NULL) $stat004=0;
@@ -155,7 +161,7 @@ $store.='Svi tačni odgovori u toku ovog dana$!$'.$stat004.'$!$300$!$1k$!$3k$!$1
 // test sa brojem tačnih > 50%
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" AND
 		(tacnih / ukupno) >= 0.5 AND ukupno>9';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat1=$row['cnt'];
 if ($stat1<=300) $graph=round($stat1/300*42);
@@ -168,7 +174,7 @@ $store.='Testova sa brojem tačnih > 50%$!$'.$stat1.'$!$300$!$1k$!$3k$!$10k$!$'.
 // test sa brojem tačnih > 75%
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" AND
 		(tacnih / ukupno) >= 0.75 AND ukupno>9';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat2=$row['cnt'];
 if ($stat2<=100) $graph=round($stat2/100*42);
@@ -181,7 +187,7 @@ $store.='Testova sa brojem tačnih > 75%$!$'.$stat2.'$!$100$!$300$!$1k$!$3k$!$'.
 // test sa svim tačnim rečima
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" AND
 		tacnih = ukupno AND ukupno>9';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat3=$row['cnt'];
 if ($stat3<=30) $graph=round($stat3/30*42);
@@ -193,7 +199,7 @@ $store.='Testova sa svim tačnim rečima$!$'.$stat3.'$!$30$!$100$!$300$!$1k$!$'.
 
 // Svi tačni odgovori
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat4=$row['cnt'];
 if ($stat4==NULL) $stat4=0;
@@ -207,7 +213,7 @@ $store.='Svi tačni odgovori$!$'.$stat4.'$!$3k$!$10k$!$30k$!$100k$!$'.$graph.'$#
 // Reči sa procentom tačnosti većim od 80% i preko 7 puta da su se pojavile
 $sql='SELECT COUNT(*) cnt FROM test_reci WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		procenat >= 0.8 AND ukupno > 7';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat5=$row['cnt'];
 if ($stat5<=30) $graph=round($stat5/30*42);
@@ -220,7 +226,7 @@ $store.='Reči sa procentom tačnosti većim od 80%$!$'.$stat5.'$!$30$!$100$!$30
 // Reči sa procentom tačnosti većim od 95% i preko 7 puta da su se pojavile
 $sql='SELECT COUNT(*) cnt FROM test_reci WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		procenat >= 0.95 AND ukupno > 7';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat6=$row['cnt'];
 if ($stat6<=10) $graph=round($stat6/10*42);
@@ -234,7 +240,7 @@ $store.='Reči sa procentom tačnosti većim od 95%$!$'.$stat6.'$!$10$!$30$!$100
 $stat7=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.5 AND ukupno>9 AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat7) $stat7=$aaa;
@@ -250,7 +256,7 @@ $store.='Testovi sa procentom tačnosti većim od 50% u toku jednog dana$!$'.$st
 $stat8=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.75 AND ukupno>9 AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat8) $stat8=$aaa;
@@ -266,7 +272,7 @@ $store.='Testovi sa procentom tačnosti većim od 75% u toku jednog dana$!$'.$st
 $stat9=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		tacnih = ukupno AND ukupno>9 AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat9) $stat9=$aaa;
@@ -281,7 +287,7 @@ $store.='Testovi sa svim tačnim odgovorima u toku jednog dana$!$'.$stat9.'$!$10
 // Svi tacni odgovori u toku jednog dana
 $stat10=0;
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat10) $stat10=$aaa;
@@ -296,7 +302,7 @@ else $graph=168;$store.='Svi tačni odgovori u toku jednog dana$!$'.$stat10.'$!$
 $stat11=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.5 AND ukupno>9 AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat11) $stat11=$aaa;
@@ -312,7 +318,7 @@ $store.='Testovi sa procentom tačnosti većim od 50% u toku jedne sedmice$!$'.$
 $stat12=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.75 AND ukupno>9 AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat12) $stat12=$aaa;
@@ -328,7 +334,7 @@ $store.='Testovi sa procentom tačnosti većim od 75% u toku jedne sedmice$!$'.$
 $stat13=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		tacnih = ukupno AND ukupno>9 AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat13) $stat13=$aaa;
@@ -343,7 +349,7 @@ $store.='Testovi sa svim tačnim odgovorima u toku jedne sedmice$!$'.$stat13.'$!
 // Svi tacni odgovori u toku jedne sedmice
 $stat14=0;
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat14) $stat14=$aaa;
@@ -359,7 +365,7 @@ $store.='Svi tačni odgovori u toku jedne sedmice$!$'.$stat14.'$!$1k$!$3k$!$10k$
 $stat15=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.5 AND ukupno>9 AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat15) $stat15=$aaa;
@@ -375,7 +381,7 @@ $store.='Testovi sa procentom tačnosti većim od 50% u toku jednog meseca$!$'.$
 $stat16=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		(tacnih / ukupno) >= 0.75 AND ukupno>9 AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat16) $stat16=$aaa;
@@ -391,7 +397,7 @@ $store.='Testovi sa procentom tačnosti većim od 75% u toku jednog meseca$!$'.$
 $stat17=0;
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND
 		tacnih = ukupno AND ukupno>9 AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat17) $stat17=$aaa;
@@ -406,7 +412,7 @@ $store.='Testovi sa svim tačnim odgovorima u toku jednog meseca$!$'.$stat17.'$!
 // Svi tacni odgovori u toku jednog meseca
 $stat18=0;
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 while($row=$result->fetch_assoc()) {
 $aaa=$row['cnt'];
 if ($aaa>$stat18) $stat18=$aaa;
@@ -420,7 +426,7 @@ $store.='Svi tačni odgovori u toku jednog meseca$!$'.$stat18.'$!$3k$!$10k$!$30k
 
 // Svi testovi u toku jednog dana
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat19=$row['cnt'];
 if ($stat19==NULL) $stat19=0;
@@ -433,7 +439,7 @@ $store.='Svi testovi u toku jednog dana$!$'.$stat19.'$!$100$!$300$!$1k$!$3k$!$'.
 
 // Svi testovi u toku jedne sedmice
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat20=$row['cnt'];
 if ($stat20==NULL) $stat20=0;
@@ -446,7 +452,7 @@ $store.='Svi testovi u toku jedne sedmice$!$'.$stat20.'$!$300$!$1k$!$3k$!$10k$!$
 
 // Svi testovi u toku jednog meseca
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat21=$row['cnt'];
 if ($stat21==NULL) $stat21=0;
@@ -459,7 +465,7 @@ $store.='Svi testovi u toku jednog meseca$!$'.$stat21.'$!$1k$!$3k$!$10k$!$30k$!$
 
 // Svi testovi u toku jednog dana za ovaj jezik
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat22=$row['cnt'];
 if ($stat22==NULL) $stat22=0;
@@ -472,7 +478,7 @@ $store.='Svi testovi u toku jednog dana za ovaj jezik$!$'.$stat22.'$!$300$!$1k$!
 
 // Svi testovi u toku jedne sedmice za ovaj jezik
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat23=$row['cnt'];
 if ($stat23==NULL) $stat23=0;
@@ -485,7 +491,7 @@ $store.='Svi testovi u toku jedne sedmice za ovaj jezik$!$'.$stat23.'$!$1k$!$3k$
 
 // Svi testovi u toku jednog meseca za ovaj jezik
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat24=$row['cnt'];
 if ($stat24==NULL) $stat24=0;
@@ -498,7 +504,7 @@ $store.='Svi testovi u toku jednog meseca za ovaj jezik$!$'.$stat24.'$!$3k$!$10k
 
 // Sve tačne reči za ovaj jezik
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat25=$row['cnt'];
 if ($stat25==NULL) $stat25=0;
@@ -511,7 +517,7 @@ $store.='Sve tačne reči za ovaj jezik$!$'.$stat25.'$!$10k$!$30k$!$100k$!$300k$
 
 // Svi testovi u toku jednog dana za ovog korisnika
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat26=$row['cnt'];
 if ($stat26==NULL) $stat26=0;
@@ -524,7 +530,7 @@ $store.='Svi testovi u toku jednog dana koje ste vi obavili$!$'.$stat26.'$!$300$
 
 // Svi testovi u toku jedne sedmice ovog korisnika
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat27=$row['cnt'];
 if ($stat27==NULL) $stat27=0;
@@ -537,7 +543,7 @@ $store.='Svi testovi u toku jedne sedmice koje ste vi obavili$!$'.$stat27.'$!$1k
 
 // Svi testovi u toku jednog meseca ovog korisnika
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE user="'.$userx.'" AND vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat28=$row['cnt'];
 if ($stat28==NULL) $stat28=0;
@@ -550,7 +556,7 @@ $store.='Svi testovi u toku jednog meseca koje ste vi obavili$!$'.$stat28.'$!$3k
 
 // Sve tačne reči ovog korisnika
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE user="'.$userx.'" AND vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat29=$row['cnt'];
 if ($stat29==NULL) $stat29=0;
@@ -563,7 +569,7 @@ $store.='Sve tačne reči koje ste vi pogodili$!$'.$stat29.'$!$30k$!$100k$!$300k
 
 // Svi testovi u toku jednog dana za sve korisnike
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE vrsta="rec" GROUP BY DATE(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat30=$row['cnt'];
 if ($stat30<=3000) $graph=round($stat30/3000*42);
@@ -575,7 +581,7 @@ $store.='Svi testovi u toku jednog dana za sve korisnike$!$'.$stat30.'$!$3k$!$10
 
 // Svi testovi u toku jedne sedmice za sve korisnike
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE vrsta="rec" GROUP BY YEAR(datum), WEEK(datum,0)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat31=$row['cnt'];
 if ($stat31<=10000) $graph=round($stat31/10000*42);
@@ -587,7 +593,7 @@ $store.='Svi testovi u toku jedne sedmice za sve korisnike$!$'.$stat31.'$!$10k$!
 
 // Svi testovi u toku jednog meseca za sve korisnike
 $sql='SELECT COUNT(*) cnt FROM test_rezultati WHERE vrsta="rec" GROUP BY YEAR(datum), MONTH(datum)';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat32=$row['cnt'];
 if ($stat32<=30000) $graph=round($stat32/30000*42);
@@ -599,7 +605,7 @@ $store.='Svi testovi u toku jednog meseca za sve korisnike$!$'.$stat32.'$!$30k$!
 
 // Sve tačne reči za sve korisnike
 $sql='SELECT SUM(tacnih) cnt FROM test_rezultati WHERE vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $stat33=$row['cnt'];
 if ($stat33<=300000) $graph=round($stat33/300000*42);
@@ -610,23 +616,23 @@ else $graph=168;
 $store.='Sve tačne reči za sve korisnike$!$'.$stat33.'$!$300k$!$1M$!$3M$!$10M$!$'.$graph;
 
 $sql='SELECT stat, ID, COUNT(*) cnt FROM test_statistike WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $idsel=$row['ID'];
 if ($row['cnt']==1) {
 	$laststat=$row['stat'];
 	$sql='UPDATE test_statistike SET stat="'.$store.'", datum="'.$datum.'", laststat="'.$laststat.'" WHERE ID="'.$idsel.'"';
-	$mysqli->query($sql) or die(mysqli_error($mysqli));
+	$mysqli->query($sql) or die;
 }
 else {
 	$sql='INSERT INTO test_statistike (user, vrsta, recnik, smer, stat, datum) VALUES ("'.$userx.'","rec","'.$recnik.'","'.$smer.'","'.$store.'","'.$datum.'")';
-	$mysqli->query($sql) or die(mysqli_error($mysqli));
+	$mysqli->query($sql) or die;
 }
 
 }
 
 $sql='SELECT stat, laststat FROM test_statistike WHERE user="'.$userx.'" AND recnik="'.$recnik.'" AND smer="'.$smer.'" AND vrsta="rec"';
-$result = $mysqli->query($sql) or die(mysqli_error($mysqli));
+$result = $mysqli->query($sql) or die;
 $row=$result->fetch_assoc();
 $statx1=explode('$!!$',$row['stat']);
 $statx1a=$statx1[0];

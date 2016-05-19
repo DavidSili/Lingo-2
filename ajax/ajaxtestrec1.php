@@ -6,6 +6,12 @@ $grupe = isset($_GET["grupe"]) ? $_GET["grupe"] : 0;
 $tipt = isset($_GET["tipt"]) ? $_GET["tipt"] : 0;
 $userx = isset($_GET["userx"]) ? $_GET["userx"] : 0;
 
+$klk = $mysqli->real_escape_string($klk);
+$naosnovu = $mysqli->real_escape_string($naosnovu);
+$grupe = $mysqli->real_escape_string($grupe);
+$tipt = $mysqli->real_escape_string($tipt);
+$userx = $mysqli->real_escape_string($userx);
+
 $passhtml="";
 $sql ='SELECT tabela FROM jezici ORDER BY `ime` LIMIT 1';
 $result = $mysqli->query($sql) or die;

@@ -17,7 +17,10 @@ $recnik = isset($_GET["recnik"]) ? $_GET["recnik"] : 0;
 $koliko = isset($_GET["koliko"]) ? $_GET["koliko"] : 0;
 $opcija = isset($_GET["opcija"]) ? $_GET["opcija"] : 0;
 $tipt = isset($_GET["tipt"]) ? $_GET["tipt"] : 0;
-
+$recnik = mysqli_real_escape_string($mysqli,$recnik);
+$koliko = mysqli_real_escape_string($mysqli,$koliko);
+$opcija = mysqli_real_escape_string($mysqli,$opcija);
+$tipt = mysqli_real_escape_string($mysqli,$tipt);
 $recnikx=explode("-",$recnik);
 $recnik=$recnikx[1];
 $smer=$recnikx[0];

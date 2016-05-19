@@ -54,16 +54,16 @@ if (isset($_POST['nrecnika'])) {
 	$genitivb=$mysqli->real_escape_string($genitivb);
 
 	$sql="INSERT INTO jezici ( ime, tabela, slikaa, slikab, prideva, pridevb, genitiva, genitivb ) VALUES ( '$nrecnika', 'rec_$tabreci', '$slikaa', '$slikab', '$prideva', '$pridevb', '$genitiva', '$genitivb' )";
-	$mysqli->query($sql) or trigger_error($mysqli->error."[ '1: '.$sql]");
+	$mysqli->query($sql) or die;
 
 	$sql="INSERT INTO recnici ( tabela, naziv) VALUES ( 'dek_$tabdek', '$genitivb' )";
-	$mysqli->query($sql) or trigger_error($mysqli->error."[ '2: '.$sql]");
+	$mysqli->query($sql) or die;
 
 	$sql="CREATE TABLE `lingo2`.`rec_$tabreci` ( `ID` INT(10) NOT NULL AUTO_INCREMENT , `aa` VARCHAR(50) NOT NULL , `bb` VARCHAR(50) NOT NULL , `coma` VARCHAR(100) NULL , `comb` VARCHAR(100) NULL , `syna` VARCHAR(300) NOT NULL , `synb` VARCHAR(300) NOT NULL , `uneo` VARCHAR(100) NOT NULL , `izmenio` TEXT NULL , PRIMARY KEY (`ID`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci";
-	$mysqli->query($sql) or trigger_error($mysqli->error."[ '3: '.$sql]");
+	$mysqli->query($sql) or die;
 
 	$sql="CREATE TABLE `lingo2`.`dek_$tabdek` ( `ID` INT NOT NULL AUTO_INCREMENT , `naziv` VARCHAR(100) NOT NULL , `dizajn` VARCHAR(5000) NOT NULL , `odgovori` VARCHAR(5000) NOT NULL , `uneo` VARCHAR(100) NOT NULL , `izmenio` TEXT NULL , PRIMARY KEY (`ID`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci";
-	$mysqli->query($sql) or trigger_error($mysqli->error."[ '4: '.$sql]");
+	$mysqli->query($sql) or die;
 }
 
 ?>

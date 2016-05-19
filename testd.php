@@ -3,18 +3,18 @@ session_start();
 $uri=$_SERVER['REQUEST_URI'];
 $pos = strrpos($uri, "/");
 $url = substr($uri, $pos+1);
+include 'config.php';
 if ($_SESSION['loggedin'] != 1 OR $_SESSION['level'] == 0 ) {
 	header("Location: login.php?url=$url");
 	exit;
 }
 else {
-include 'config.php';
 $level=$_SESSION['level'];
 $user=$_SESSION['user'];
 }
 $datumx=date('Y-m-d');
 
-if (isset($_POST['recnik'])) $recnik=$_POST['recnik'];
+if (isset($_POST['recnik'])) $recnik=mysqli_real_escape_string($mysqli,$_POST['recnik']);
 else $recnik="";
 
 ?>
@@ -59,8 +59,8 @@ if ($recnik=="") $recnik=$tabela;
 
 if (isset($_POST['recnik'])) {
 	
-	$smerpo=$_POST['smerpo'];
-	$selpo=$_POST['selpo'];
+	$smerpo=mysqli_real_escape_string($mysqli,$_POST['smerpo']);
+	$selpo=mysqli_real_escape_string($mysqli,$_POST['selpo']);
 
 }
 else {
@@ -116,7 +116,7 @@ else {
 if (isset($_POST['recnik'])) {
 
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=mysqli_real_escape_string($mysqli,$yy);
 	}
 
 	$sql="SELECT * FROM $recnik WHERE `ID`='$posebnox'";
