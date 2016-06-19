@@ -275,8 +275,8 @@ else
 document.getElementById("kolona_l").style.height=viewportheight-75;
 document.getElementById("kolona_c").style.height=viewportheight-75;
 document.getElementById("kolona_d").style.height=viewportheight-75;
-document.getElementById("listareci").style.height=viewportheight-241;
-document.getElementById("rezultati").style.height=viewportheight-315;
+document.getElementById("listareci").style.height=viewportheight-229;
+document.getElementById("rezultati").style.height=viewportheight-293;
 document.getElementById("centralni_box").style.height=viewportheight-145;
 }
 
