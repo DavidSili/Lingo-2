@@ -85,7 +85,7 @@ while ($row=$result->fetch_assoc()) {
 
 <div id="kolona_c" class="kolona" style="width:550px;margin:50px auto 20px;z-index:999">
 	<div class="box">
-		<h3 style="width:524">Unos deklinacija</h3>
+		<h3 style="width:524">Unos citata</h3>
 		<div id="centralni_box" class="deklinacija">
 <?php
 for ($i = 1; $i <= 6; $i++) {

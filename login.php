@@ -28,8 +28,6 @@ if (isset($_GET['login'])) {
 		
 		$xhash = hash ('sha256', $passsent);
 		$hash = hash('sha256', $saltsql . $xhash);
-		
-		echo 'a: '.$level.'<br>b: '.$pass_url.'<br>';
 
 		if ($level>1 && $hash==$passsql) {
 		
